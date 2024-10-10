@@ -1,0 +1,111 @@
+/* Added styles for the post content */
+.post-meta {
+  font-size: 0.9rem; /* Smaller font size for meta info */
+  color: #666; /* Grey color for meta info */
+  margin-bottom: 10px; /* Space below meta info */
+}
+
+.post-content {
+  margin-bottom: 15px; /* Space below post content */
+}
+
+/* Comment Card Styles */
+.comment-card {
+  background-color: #f0f0f0; /* Light background for comments */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for comments */
+  margin: 10px 0; /* Margin between comments */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for comments */
+}
+
+.comment-card p {
+  margin: 5px 0; /* Margin for paragraphs */
+  line-height: 1.5; /* Increase line height for readability */
+}
+
+.comment-card strong {
+  color: #007bff; /* Blue color for commenter's name */
+}
+
+/* Add a hover effect for comments */
+.comment-card:hover {
+  background-color: #e6f7ff; /* Light blue background on hover */
+}
+
+
+.posts-container {
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  background-color: #f0f2f5; /* Light background for the entire container */
+  border-radius: 8px; /* Rounded corners for the container */
+}
+
+h1 {
+  font-size: 2rem; /* Larger font size for the heading */
+  color: #1c1e21; /* Dark color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Add space between the cards */
+}
+
+.post-card {
+  background-color: white; /* Set background color for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+
+.post-card:hover {
+  transform: translateY(-3px); /* Lift the card slightly on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.post-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color */
+  display: flex;
+  flex-direction: column; /* Arrange image and text in a column */
+}
+
+.post-image {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px 8px 0 0; /* Match card corners */
+}
+
+.post-title {
+  font-size: 1rem; /* Font size for titles */
+  margin: 10px; /* Space around title */
+  color: #1c1e21; /* Dark color for the title */
+  font-weight: 400; /* Semi-bold title */
+  line-height: 1.5; /* Increase line height for readability */
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+  .post-title {
+      font-size: 1rem; /* Smaller font size for titles on mobile */
+  }
+}
+
+
+.post-metrics {
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: space-between; /* Space between like and comment counts */
+  margin-top: 10px; /* Space above the metrics */
+  font-size: 0.9rem; /* Smaller font size for metrics */
+  color: #606770; /* Gray color for the text */
+}
+
+.post-likes, .post-comments {
+  margin-right: 10px; /* Space between likes and comments */
+}
